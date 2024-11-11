@@ -50,7 +50,7 @@ ol {
 .content {
   display: flex;
   width: 1140px;
-  height: 534px;
+  min-height: 534px;
   gap: 30px;
   margin: auto;
   margin-top: 133px;
@@ -70,20 +70,21 @@ ol {
 }
 
 .result__video {
-  object-fit: contain;
+  object-position: center;
+  object-fit: cover;
   min-width: 711px;
 }
 
 .search-form {
   display: flex;
   justify-content: flex-start;
-  height: 100%;
   gap: 40px;
 }
 
 .search-form__label {
   display: flex;
   width: fit-content;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -178,8 +179,8 @@ ol {
 }
 
 .search-form__submit-button {
-  width: 194px;
-  height: 34px;
+  min-width: 194px;
+  min-height: 34px;
   margin-top: 20px;
 }
 
@@ -217,21 +218,18 @@ ol {
 
 .title {
   width: 259px;
-  height: 210px;
+  min-height: 210px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
+  margin-bottom: 26px;
   text-transform: uppercase;
 }
 
 .content__accent {
   color: #545050;
-}
-
-.title {
-  margin-bottom: 26px;
 }
 
 .content__list {
@@ -246,12 +244,13 @@ ol {
   text-decoration: none;
 }
 
-.content__card-link_current2 {
+.content__card-link_current {
   background-color: #545050;
 }
 
 .content__card-link:has(:active) {
   text-decoration: none;
+  background-color: #545050;
 }
 
 .content__card-link:hover {
@@ -290,7 +289,6 @@ ol {
 
 .content__video-card-title {
   width: 200px;
-  height: 30px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -298,11 +296,11 @@ ol {
   line-height: 100%;
   text-transform: uppercase;
   margin-bottom: 6px;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
   width: 200px;
-  height: 65px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;

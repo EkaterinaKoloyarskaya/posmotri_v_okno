@@ -218,7 +218,6 @@ ol {
 
 .title {
   width: 259px;
-  min-height: 210px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -297,6 +296,8 @@ ol {
   text-transform: uppercase;
   margin-bottom: 6px;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
